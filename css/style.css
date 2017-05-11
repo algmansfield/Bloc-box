@@ -41,7 +41,7 @@ p {
     float:left;
     position: relative;
     min-height: 1px;
-    margin: 0 2% 20%;
+    margin: 0 2%;
 }
 
 @media (min-width: 768px) {
@@ -59,7 +59,7 @@ p {
     .one-third {
         width: 29.33333%;
     }
-    one-fourth {
+    .one-fourth {
         width:21%;
     }
 }
@@ -263,13 +263,13 @@ header .hero {
    font-style: italic;
    background:#34495E;
    position: relative;
-   padding:30px;
+   padding:20px;
    width:auto;
    margin:0;
  }
  .testimonials blockquote:after {
    top: 100%;
-   left: 13%;
+   left: 13.5%;
    border: solid transparent;
    content: " ";
    height: 0;
@@ -281,28 +281,47 @@ header .hero {
    margin-left: -10px;
  }
 .testimonials img {
-   height: 65px;
-   width: 65px;
+   height: 57px;
+   width: 57px;
    border-radius:50%;
    float: left;
    display: inline-block;
    margin:20px 10px 0 0;
  }
  .testimonials p.name {
-   float: left;
-   display: inline-block;
+   display: inline;
+   position: absolute;     
    text-align: left;
-   font-size:13px;
+   font-size:11px;
    margin-top: 30px;
+   height: 70px;
+   width: 200px;   
+   left:60px;     
  }
 
+/* SIGN UP */
+
+.signUp {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    color:#FFFFFF;
+    background:#34495E;
+    background-image: -moz-linear-gradient( 206deg, rgba(95,129,163,0.74902) 0%, rgba(52,73,94,0) 100%);
+    background-image: -webkit-linear-gradient( 206deg, rgba(95,129,163,0.74902) 0%, rgba(52,73,94,0) 100%);
+    background-image: -ms-linear-gradient( 206deg, rgba(95,129,163,0.74902) 0%, rgba(52,73,94,0) 100%);
+}
+
+h2 {
+    padding-bottom: 50px;
+    color: #FFFFFF;
+}
+ 
 /* FOOTER */
 
  footer {
-   background-color: #34495E;
-   background-image: linear-gradient(to top,
-      #3498DB 0%, #3498DB 50%, #34495E 50%, #34495E 100%);
-   color: #FFFFFF;
+   color: #34495E;
    height: 150px;
    position: relative;
    overflow: hidden;
@@ -310,16 +329,17 @@ header .hero {
  }
  footer p, footer nav ul {
    font-size:14px;
-   font-weight:100;
+   font-weight:500;
    text-align: center;
    margin: 10px auto 0;
  }
  footer nav ul li {
    list-style-type: none;
    display: inline;
+   font-weight: 500;
  }
  footer nav ul li a {
-   color:#FFFFFF;
+   color:#34495E;
    text-decoration: none;
  }
  footer .right-footer-block {
@@ -332,19 +352,16 @@ header .hero {
  }
 @media (min-width: 992px){
    footer{
-     background-color: #3498DB;
-     background-image: linear-gradient(to left,
-        #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
+     background-color: white;
      height: 100px;
    }
    footer p, footer nav ul{
      padding: 2em 0;
      text-align: left;
    }
-   footer .right-footer-block {
-     background-color: #3498DB;
-   }
    footer .logo{
      padding: 2em 0 2em 1.5em;
    }
  }
+footer .right-footer-block {
+     background-color: white;
