@@ -130,7 +130,11 @@ header .hero {
 h1 .animated .fadeIn {
     animation-duration: 30s;
 }
-
+@media (min-width: 320px) {
+    header nav ul > li a {
+        width: 310px;
+    }
+}
 /* BUTTONS */
 
 .btn {
@@ -301,7 +305,9 @@ h1 .animated .fadeIn {
    width: 200px;   
    left:60px;     
  }
-
+li.one-fourth.down {
+    top: 20px;
+}
 /* SIGN UP */
 
 .signUp {
