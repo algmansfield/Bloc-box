@@ -68,6 +68,12 @@ p {
         width:1170px;
     }
 }
+@media (min-width: 320px) {
+    div.one-half {
+        width: 150px;
+        display: inline-block;
+    }
+}
 
 /* HEADER */
 
@@ -131,8 +137,11 @@ h1 .animated .fadeIn {
     animation-duration: 30s;
 }
 @media (min-width: 320px) {
-    header nav ul > li a {
-        width: 310px;
+    header div ul > li {
+        width: 50%;
+    }
+    header div ul > li a {
+        display: inline-block;
     }
 }
 /* BUTTONS */
