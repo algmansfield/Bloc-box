@@ -38,7 +38,7 @@ p {
     clear:both;
 }
 .one-half, .one-third, .one-fourth {
-    width:96%;
+    width:46%;
     float:left;
     position: relative;
     min-height: 1px;
@@ -79,17 +79,52 @@ p {
     header div .dashboard {
         width: 90%;
     }
-    header .hero h1 {
-        margin: 0 0 0;
+    .one-third {
+        width: 95%;
+    }
+    .one-fourth {
+        width: auto;
+    }
+    .box.first {
+        margin-bottom: 25px;
+    }
+    .left-footer-block {
+        width: 29%;
+    }
+    .link-block.middle-footer-block {
+        width: 29%;
+    }
+    .right-footer-block {
+        width: 29%;
     }
 }
 @media (min-width: 480px) {
     header div ul li {
-        display: inline;
+        display: inline-block;
         padding-right: 10px;
     }
 }
-
+@media (min-width: 768px) {
+    .one-third {
+       width:29%;
+    }
+    .one-fourth {
+       width:46%;
+    }
+}
+@media (min-width: 1024px) {
+    .one-third {
+        width: 29%;
+    }
+    .one-fourth {
+        width: 21%;
+    }
+}
+@media (min-width: 1280px) {
+    .one-third {
+        width: 29%;
+    }
+}
 /* HEADER */
 
 header {
@@ -151,12 +186,12 @@ header .hero {
 h1 .animated .fadeIn {
     animation-duration: 30s;
 }
-header .leftNav {
+/* header .leftNav {
     width: 30%;
-}
-header .rightNav {
+} */
+/* header .rightNav {
     width: 70%;
-}
+} */
 
 /* BUTTONS */
 
@@ -330,6 +365,7 @@ header .rightNav {
  }
 li.one-fourth.down {
     top: 20px;
+    padding-bottom: 40px;
 }
 /* SIGN UP */
 
@@ -340,9 +376,6 @@ li.one-fourth.down {
     padding-top: 20px;
     color:#FFFFFF;
     background:#34495E;
-    background-image: -moz-linear-gradient( 206deg, rgba(95,129,163,0.74902) 0%, rgba(52,73,94,0) 100%);
-    background-image: -webkit-linear-gradient( 206deg, rgba(95,129,163,0.74902) 0%, rgba(52,73,94,0) 100%);
-    background-image: -ms-linear-gradient( 206deg, rgba(95,129,163,0.74902) 0%, rgba(52,73,94,0) 100%);
 }
 
 h2 {
@@ -374,13 +407,11 @@ h2 {
    color:#34495E;
    text-decoration: none;
  }
- footer .right-footer-block {
-   background-color: transparent;
- }
  footer .logo{
-   padding: 2.35em 0;
+   padding: 1em 0;
    margin: 0 auto;
    display: block;
+   float: right;
  }
 @media (min-width: 992px){
    footer{
