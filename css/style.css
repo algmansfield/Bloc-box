@@ -468,6 +468,9 @@ footer .right-footer-block {
    list-style-type: none;
    margin-bottom: 15px;
  }
+ a:active {
+   background-color: #34495e;   
+ }
  .left-nav .items ul li a {
    color:#FFFFFF;
    text-decoration: none;
