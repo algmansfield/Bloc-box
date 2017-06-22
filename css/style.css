@@ -429,6 +429,9 @@ h2 {
 footer .right-footer-block {
      background-color: white;
 }
+.settings-btn {
+    margin-top: 0px;
+}
 
 /* DASHBOARD */
  .dashboard {
@@ -571,7 +574,13 @@ a:active {
    margin-right:10px;
    margin-top:8px;
  }
-
+ ul, menu, dir {
+   -webkit-margin-before: 1em;
+   -webkit-margin-after: 1em;
+   -webkit-margin-start: 0px;
+   -webkit-margin-end: 0px;
+   -webkit-padding-start: 40px;
+ } 
 /* CONTENT */
  .content {
    padding:6em 1% 1.5em;
