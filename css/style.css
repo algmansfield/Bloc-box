@@ -159,7 +159,6 @@ header nav ul > li > a {
     color: #FFFFFF;
     text-decoration: none;
 }
-
 header nav ul > li.btn-outline:hover > a {
     color: #34495E;
 }
@@ -186,12 +185,6 @@ header .hero {
 h1 .animated .fadeIn {
     animation-duration: 30s;
 }
-/* header .leftNav {
-    width: 30%;
-} */
-/* header .rightNav {
-    width: 70%;
-} */
 
 /* BUTTONS */
 
@@ -568,19 +561,12 @@ a:active {
  }
  .left-nav .settings a {
    color:#FFFFFF;
+   font-size: 14px;
    text-decoration: none;
-   text-align: right;
-   float: right;
+   text-align: center;
    margin-right:10px;
-   margin-top:8px;
+   margin-top:12px;
  }
- ul, menu, dir {
-   -webkit-margin-before: 1em;
-   -webkit-margin-after: 1em;
-   -webkit-margin-start: 0px;
-   -webkit-margin-end: 0px;
-   -webkit-padding-start: 40px;
- } 
 /* CONTENT */
  .content {
    padding:6em 1% 1.5em;
